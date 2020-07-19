@@ -54,6 +54,30 @@ class LinkedList:
             self.head = current
             current = upcoming
 
+    # Recursion version
+    # def reverse_list(self, node, prev):
+    #     if self.head is None:
+    #         return
+        
+    #     current = self.head
+    #     backwards = False
+        
+    #     if current.next_node is None:
+    #         backwards = True
+    #     # Drill down to the bottom
+    #     if backwards is False or current.next_node is not None:
+    #         backwards = True
+    #         current = node
+    #         prev = current
+    #         current = current.get_next()
+    #         self.head = current
+    #         self.reverse_list(current, prev)
+    #     # cascade backwards
+    #     if backwards is True:
+    #         current = current.set_next(prev)   
+    #         prev = node
+    #         prev.next_node = None
+
         
             
 
